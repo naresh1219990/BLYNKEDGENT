@@ -5,7 +5,7 @@
 #define BLYNK_FIRMWARE_VERSION        "0.1.0"
 
 #define BLYNK_PRINT Serial
-#define USE_NODE_MCU_BOARD
+// #define USE_NODE_MCU_BOARD
 
 #include "BlynkEdgent.h"
 #include<Servo.h>
@@ -21,7 +21,7 @@ BLYNK_WRITE(V2)
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   servo.attach(D2);
   BlynkEdgent.begin();
   delay(2000); 
