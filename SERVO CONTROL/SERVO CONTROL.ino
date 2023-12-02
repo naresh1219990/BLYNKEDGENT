@@ -11,7 +11,7 @@
 #include<Servo.h>
 Servo servo;
 
-BLYNK_WRITE(V2)
+BLYNK_WRITE(V3)
 
 {
   int s0 = param.asInt(); 
